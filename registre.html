@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Registre</title>
+</head>
+<body>
+    <form action="/" method="get">
+        <div>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nombre" required>
+            <label for="llinatges">Llinatges:</label>
+            <input type="text" id="llinatges" name="apellido" required>
+        </div>
+        <div>
+            <label for="home">Home:</label>
+            <input type="radio" id="male" name="genero" value="male" required>
+            <label for="dona">Dona</label>
+            <input type="radio" id="female" name="genero" value="female" required>
+            <label for="altre">Altre:</label>
+            <input type="radio" id="other" name="genero" value="other" required>
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="email" name="email" placeholder="El teu mail" required>
+            <label for="mail">Contrasenya:</label>
+            <input type="password" id="password" name="password" maxlength="10" minlength="5" required>
+        </div>
+        <div>
+            <label for="date">Data de Naixament:</label>
+            <input type="date" id="date" name="fecha" required>
+        </div>
+            <label for="checkbox">Estic d'acord amb els termes i condicions</label>
+            <input type="checkbox" id="ToS" name="ToS" value="ToS" required>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+      </form>
+</body>
+</html>

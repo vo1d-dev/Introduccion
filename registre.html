@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Registre</title>
+</head>
+<body>
+
+    <!-- Creación del formulario -->
+    <form action="registre.html" method="POST">
+
+        <!-- Caja en la cual insertamos el Nom/Llinatge utilizando el type "text", marcamos required
+            para forzar al usuario a rellenar estos campos. -->
+        <div>
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nombre" required>
+            <label for="llinatges">Llinatges:</label>
+            <input type="text" id="llinatges" name="apellido" required>
+        </div>
+
+        <!-- Caja de selección de generos la cual usamos el type "radio" para seleccionar solo 1 de los sugeridos,
+        tambien es un campo requerido por lo que usamos required -->
+        <div>
+            <label for="home">Home:</label>
+            <input type="radio" id="home" name="genero" value="male" required>
+            <label for="dona">Dona</label>
+            <input type="radio" id="dona" name="genero" value="female" required>
+            <label for="altre">Altre:</label>
+            <input type="radio" id="altre" name="genero" value="other" required>
+        </div>
+
+        <!-- Campo de Mail y Contraseña, utilizamos el type mail para el mail asi nos aseguramos de que lo
+        que introduce es un formato de mail, y usamos el type "password" para esconder lo que introduce. -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="El teu mail" required>
+            <label for="password">Contrasenya:</label>
+            <input type="password" id="password" name="password" maxlength="10" minlength="5" required>
+        </div>
+
+        <!-- Campo de fecha de nacimiento y checkbox para los "Terms of Service", tambien utilizamos required -->
+        <div>
+            <label for="date">Data de Naixament:</label>
+            <input type="date" id="date" name="fecha" required>
+        </div>
+            <label for="ToS">Estic d'acord amb els termes i condicions</label>
+            <input type="checkbox" id="ToS" name="ToS" value="ToS" required>
+        <div>
+            <!-- Submit para mandar el formulario a la pagina deseada. -->
+            <input type="submit" value="submit">
+        </div>
+      </form>
+      <p>
+        <a href="index.html">Volver al inicio</a>
+    </p>
+</body>
+</html>

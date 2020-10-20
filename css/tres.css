@@ -8,58 +8,27 @@ body{
 
 h1{
     text-align: center;
-
 }
 
-.cell1 {
-
-    padding: 100px 100px;
-}
-
-.cell2 {
-    border-collapse: collapse;
+.cell-sides {
     border-left: 2px solid black;
     border-right: 2px solid black;
-    padding: 100px 100px;
 }
 
-.cell3 {  
-    padding: 100px 100px;
-}
-
-.cell4 {
+.cell-top-bottom {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 100px 100px;
 }
 
-.cell5 {
-    border-collapse: collapse;
+.cell-middle {
     border: 2px solid rgb(0, 0, 0);    
-    padding: 100px 100px;
-}
-
-.cell6 {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;  
-    padding: 100px 100px;
-}
-
-.cell7 {    
-    padding: 100px 100px;
-}
-
-.cell8 {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding: 100px 100px;
-}
-
-.cell9 {
-    padding: 100px 100px;
 }
   
 .table {
     margin: 0 auto;
     border-style: hidden;
+}
+
+.table td{
+    padding: 100px 100px;
 }

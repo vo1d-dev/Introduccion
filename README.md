@@ -1,1 +1,4 @@
 # Introducción
+```bash
+school stuff
+```
